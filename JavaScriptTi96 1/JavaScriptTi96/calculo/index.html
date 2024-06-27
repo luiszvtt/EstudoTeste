@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="shortcut icon" href="../img/calculator-icon_34473.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+        button:hover{
+            box-shadow: 1px 1px 1px black;
+            transform: scale(1.1);
+        }
+        table, input{
+            box-shadow: 1px 1px 1px black;
+        }
+        img{
+            box-shadow: 2px 2px 2px black;
+
+        }
+    </style>
+    <img src="../img/imc.webp" class="mx-auto d-block rounded" style="width: 850px; margin-top: 15px;" alt="Imagem de um treino na academia."> 
+    <div class="container mt-3">
+        <h2 style="text-align: center;">Calculando IMC</h2>
+        <p style="text-align: center; font-size: 16px;">Coloque suas informações para o seu IMC ser calculado!</p>
+
+        <form>
+          <div class="row">
+            <div class="col">
+                <label for="text">Nome:</label>
+                <input type="text" class="form-control" placeholder="Digite o seu nome:" name="nomeUser" id="nome">
+            </div>
+            <div class="col">
+                <label for="text">Data de nascimento:</label>
+                <input type="date" class="form-control" name="date" id="date">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <label for="text">Altura:</label>
+                <input type="number" class="form-control" placeholder="Coloque a sua altura:" name="altura" id="altura">
+            </div>
+            <div class="col">
+                <label for="text">Peso:</label>
+                <input type="number" class="form-control" placeholder="Coloque o seu peso:" name="peso" id="peso">
+                
+            </div>
+            
+          </div>
+          <div class="mt-3"><button name="btnCalcular" id="btnCalcular" type="button" class="btn" style="cursor: pointer; margin-left: 563px; padding: 10px; width: 170px; background-color: rgb(110, 110, 226); color: white; font-size: 17px;">Calcular</button></div>
+
+        </form>
+
+    </div>
+    <div class="container mt-3">            
+        <table class="table table-bordered table-striped" name="tableIMC">
+            <thead>
+                <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>IMC</th>
+                <th>Situação</th>
+
+        
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Luis</td>
+                <td>17</td>
+                <td>1.70</td>
+                <td>62.20</td>
+                <td>?</td>
+                <td>Peso normal</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
